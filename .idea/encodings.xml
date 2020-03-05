@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/base/MyPrinter.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base/config.ini" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/log/test_log_20190302.log" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/log/test_log_20190309.log" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/log/test_log_20190312.log" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
