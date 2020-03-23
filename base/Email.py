@@ -4,9 +4,9 @@ from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 
 _config = {'host': 'smtp.qq.com',  # 发邮件服务器
-           'sender': '',  # 发件人
-           'password': '',  # 第三方客户端授权密码
-           'receiver': '',  # 收件人
+           'sender': 'xxxx@qq.com',  # 发件人,任意邮箱此处QQ邮箱举例
+           'password': '*******',  # 第三方客户端授权密码
+           'receiver': ['xxxx@qq.com', ],  # 收件人
            }
 
 
@@ -27,7 +27,7 @@ def send_email(mail_subject, mail_content, mail_application=None, mail_config=_c
 
     msg['Subject'] = mail_subject
     msg['From'] = sender
-    msg['To'] = receiver
+    msg['To'] = ','.join(receiver)
 
     # 发送html格式会丢失css样式，尚未找到解决办法
     txt = MIMEText(mail_content, 'html')
@@ -53,11 +53,3 @@ def send_email(mail_subject, mail_content, mail_application=None, mail_config=_c
     # 退出
     smtp_server.quit()
     print("邮件发送成功")
-
-
-if __name__ == "__main__":
-    subject = "嘿嘿嘿"
-    with open("test_report_20200319_19_32_35.html", "r", encoding="utf-8") as f:
-        content = f.read()
-
-    send_email(subject, content, "test_report_20200319_19_32_35.html")
