@@ -1,0 +1,4 @@
+16:54:36 MyLogger.py[line:20] INFO +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+- 
+
+16:54:36 MyLogger.py[line:23] INFO ************** begin get_data **************
+16:54:36 MyLogger.py[line:25] INFO params list: [<base.MySqlTools.SqlTools object at 0x0000000002B388D0>, 'select * from charge_station_info order by id desc limit 1']
